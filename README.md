@@ -53,9 +53,9 @@ You should have the following items ready before beginning the process:
 
 This section shows you how to set up a development environment for the Azure IoT device SDK for C on Atmel Studio.
 
-1. 
+1. In the Atmel Studio, select File->New->Example Project.
 
- <a name="buildrunapp"/>
+<a name="buildrunapp"/>
 ## Run the sample
 
 1. Open the file **c/serializer/samples/simplesample_http/simplesample_http.c** in a text editor.
