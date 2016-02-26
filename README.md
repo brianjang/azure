@@ -33,12 +33,11 @@ You should have the following items ready before beginning the process:
 -   Computer with Git client installed and access to the
     [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
 -   A computer with the Atmel Studio 7.0 or later installed.
--   One of following:
+-   Required hardware:
     - SAMG55 board
     - WINC1500 shield
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
-
 
 <a name="Step-2-PrepareDevice"></a>
 # Step 2: Prepare your Device
