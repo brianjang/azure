@@ -55,25 +55,21 @@ You should have the following items ready before beginning the process:
 <a name="Step-3-Build"></a>
 # Step 3: Build and Run the sample
 
-<a name="setup"/>
-## Setup the development environment
-
-This section shows you how to set up a development environment for the Azure IoT device SDK for C on Atmel Studio.
-
-1. In the Atmel Studio, select File->New->Example Project.
-
 <a name="buildrunapp"/>
-## Run the sample
+## Build and Run the sample project via Atmel Studio7: TBD
+1. double click "Ateml_Azure_EXAMPLE.atsln"
+2. Open the '''simplesample_http.c''' file in the Atmel Studio7.
+3. Locate the following code in the '''simplesample_http.c''': '''static const char* connectionString = "[device connection string]";''' .
+4. Replace "[device connection string]" with the device connection string you noted [earlier](#Step-1-Prerequisites). Save the changes.
+5. In '''main.h''', update the following line with your WiFi accesspoint's SSID and password:
+   ```
+   #define MAIN_WLAN_SSID                  "your_AP_SSID" /**< Destination SSID */
+   #define MAIN_WLAN_PSK                   "password" /**< Password for Destination SSID */
+   ``` .
+6. Build the project, which can be accessed via '''Build -> Build Solution   F7''' .
+7. upload a binary to SAMG55 board, which can be accessed via '''Debug -> Continue   F5''' .
+8. See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the **simplesample_http** application and how to send cloud-to-device messages to the **simplesample_http** application.
 
-1. Open the file **c/serializer/samples/simplesample_http/simplesample_http.c** in a text editor.
-
-2. Locate the following code in the file:
-    ```
-   static const char* connectionString = "[device connection string]";
-    ```
-3. Replace "[device connection string]" with the device connection string you noted [earlier](#Step-1-Prerequisites). Save the changes.
-
-5. Save your changes and build the samples. To build your sample project.
 
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
