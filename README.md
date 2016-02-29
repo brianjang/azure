@@ -1,6 +1,6 @@
 ---
 platform: Atmel Studio7
-device: SAMG55
+device: Atmel SAMG55J19
 language: c
 ---
 
