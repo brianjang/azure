@@ -70,7 +70,13 @@ You should have the following items ready before beginning the process:
    ``` .
 6. Build the project, which can be accessed via ```Build -> Build Solution   F7``` .
 7. upload a binary to SAMG55 board, which can be accessed via ```Debug -> Continue   F5``` .
-8. See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the **simplesample_http** application and how to send cloud-to-device messages to the **simplesample_http** application.
+
+## Receive messages from IoT Hub
+
+-   On Windows, refer "Send cloud-to-device messages" in [DeviceExplorer Usage document][lnk-device-explorer] for instructions on sending messages to device.
+
+-   If you are running other OS, please use the JavaScript tool [iot-hub explorer tool][lnk-iothub-explorer] 
+
 
 
 [lnk-setup-iot-hub]: ../setup_iothub.md
