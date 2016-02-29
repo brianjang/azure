@@ -59,12 +59,14 @@ You should have the following items ready before beginning the process:
 ## Build and Run the sample project via Atmel Studio7: 
 1. double click "Ateml_Azure_EXAMPLE.atsln" : **```TBD```**
 2. Open the ```simplesample_http.c``` file in the Atmel Studio7.
-3. Locate the following code in the ```simplesample_http.c```: ```static const char* connectionString = "[device connection string]";``` .
+3. Locate the following code in the ```simplesample_http.c```: 
+    ```static const char* connectionString = "[device connection string]";``` .
 4. Replace "[device connection string]" with the device connection string you noted [earlier](#Step-1-Prerequisites). Save the changes.
 5. In ```main.h```, update the following line with your WiFi accesspoint's SSID and password:
    ```
    #define MAIN_WLAN_SSID                  "your_AP_SSID" /**< Destination SSID */
    ```
+   
    ```
    #define MAIN_WLAN_PSK                   "password" /**< Password for Destination SSID */
    ``` .
