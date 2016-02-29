@@ -45,6 +45,7 @@ You should have the following items ready before beginning the process:
 
 - This section shows you how to set up a development environment for the Azure IoT device SDK with the SAMG55 and WINC1500 board.
 -  If you need to setup your SAMG55 device, please refer the getting started instructions [here](<http://www.atmel.com/tools/ATSAMG55-XPRO.aspx?tab=documents>) .
+
 ## how to update firmware and Flash the root certificate of the Azure IoT hub host
 -  Step 1. Open Atmel Studio7 and search for the Firmware Update Project from the “File -> New -> Example Project..." menu in Atmel Studio.
 -  Step 2. Select "SAM G, 32-bit" from "Device Family:" and Type "winc1500" to input text field.
