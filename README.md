@@ -69,7 +69,7 @@ You should have the following items ready before beginning the process:
    
    ```
    #define MAIN_WLAN_PSK                   "password" /**< Password for Destination SSID */
-   ``` .
+   ```
 6. Build the project, which can be accessed via ```Build -> Build Solution   F7``` .
 7. upload a binary to SAMG55 board, which can be accessed via ```Debug -> Continue   F5``` .
 
