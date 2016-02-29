@@ -1,10 +1,10 @@
 ---
-platform: Atmel
+platform: Atmel Studio7
 device: SAMG55
 language: c
 ---
 
-Run a simple C sample on Atmel SAMG55 device
+Run a simple C sample on Atmel SAMG55 and WINC1500 device
 ===
 ---
 
