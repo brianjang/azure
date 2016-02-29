@@ -56,8 +56,8 @@ You should have the following items ready before beginning the process:
 # Step 3: Build and Run the sample
 
 <a name="buildrunapp"/>
-## Build and Run the sample project via Atmel Studio7: TBD
-1. double click "Ateml_Azure_EXAMPLE.atsln"
+## Build and Run the sample project via Atmel Studio7: 
+1. double click "Ateml_Azure_EXAMPLE.atsln" : **TBD**
 2. Open the '''simplesample_http.c''' file in the Atmel Studio7.
 3. Locate the following code in the '''simplesample_http.c''': '''static const char* connectionString = "[device connection string]";''' .
 4. Replace "[device connection string]" with the device connection string you noted [earlier](#Step-1-Prerequisites). Save the changes.
