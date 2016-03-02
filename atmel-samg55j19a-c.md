@@ -69,22 +69,6 @@ You should have the following items ready before beginning the process:
 -   Install the prerequisite packages for the Microsoft Azure IoT Device SDK for C by issuing the following commands from the command line on your board:
 {{***Keep the command set based on your OS and remove the rest.***}}
 
-    {{**Debian or Ubuntu**}}
-
-        sudo apt-get update
-
-        sudo apt-get install -y curl libcurl4-openssl-dev uuid-dev uuid g++ make cmake git unzip openjdk-7-jre
-
-    {{**Fedora**}}
-
-        sudo dnf check-update -y
-
-        sudo dnf install libcurl-devel openssl-devel libuuid-devel uuid-devel gcc-c++ make cmake git unzip java-1.7.0-openjdk
-
-    {{**Any Other Linux OS**}}
-
-        Write equivalent commands on the target OS
-
     {{***If any other software is required, please specify here the command(s) for installing same.***}}
 
 -   Download the Microsoft Azure IoT Device SDK for C to the board by issuing the following command on the board::
@@ -93,10 +77,6 @@ You should have the following items ready before beginning the process:
 
 -   Edit the following file using any text editor of your choice:
     {{***Keep the file based on your protocol(s) and remove the rest.***}}
-
-    {{**For AMQP protocol:**}}
-
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
 
     {{**For HTTPS protocol:**}}
 
