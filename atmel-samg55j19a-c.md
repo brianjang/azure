@@ -64,23 +64,23 @@ You should have the following items ready before beginning the process:
 <a name="Load"></a>
 ## 3.1 Build SDK and sample
 
--   Open a PuTTY session and connect to the device.
-
--   Install the prerequisite packages for the Microsoft Azure IoT Device SDK for C by issuing the following commands from the command line on your board:
-{{***Keep the command set based on your OS and remove the rest.***}}
-
-    {{***If any other software is required, please specify here the command(s) for installing same.***}}
-
--   Download the Microsoft Azure IoT Device SDK for C to the board by issuing the following command on the board::
-
-        git clone https://github.com/Azure/azure-iot-sdks.git
-
--   Edit the following file using any text editor of your choice:
-    {{***Keep the file based on your protocol(s) and remove the rest.***}}
-
-    {{**For HTTPS protocol:**}}
-
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+<a name="buildrunapp"/>
+## Build and Run the sample project via Atmel Studio7: 
+1. double click "Ateml_Azure_EXAMPLE.atsln" : **```TBD```**
+2. Open the ```simplesample_http.c``` file in the Atmel Studio7.
+3. Locate the following code in the ```simplesample_http.c```: 
+    ```static const char* connectionString = "[device connection string]";``` .
+4. Replace ```[device connection string]``` with the device connection string you noted [earlier](#Step-1-Prerequisites). Save the changes.
+5. In ```main.h```, update the following line with your WiFi accesspoint's SSID and password:
+   ```
+   #define MAIN_WLAN_SSID                  "your_AP_SSID" /**< Destination SSID */
+   ```
+   
+   ```
+   #define MAIN_WLAN_PSK                   "password" /**< Password for Destination SSID */
+   ```
+6. Build the project, which can be accessed via ```Build -> Build Solution   F7``` .
+7. upload a binary to SAMG55 board, which can be accessed via ```Debug -> Continue   F5``` .
 
 -   Find the following place holder for IoT connection string:
 
@@ -88,15 +88,7 @@ You should have the following items ready before beginning the process:
 
 -   Replace the above placeholder with device connection string you obtained in [Step 1](#Step-1:-Prerequisites) and save the changes.
 
--   On the board, run the following command to build and install Apache Proton library:
 
-        sudo ./azure-iot-sdks/c/build_all/linux/build_proton.sh --install /usr
-        chmod +x ./azure-iot-sdks/c/build_all/linux/build_paho.sh
-        ./azure-iot-sdks/c/build_all/linux/build_paho.sh
-
--   Assuming everything went OK on the build_proton.sh, you can now build the SDK samples using the following command:
-
-        sudo ./azure-iot-sdks/c/build_all/linux/build.sh
 
 ## 3.2 Send Device Events to IoT Hub:
 
