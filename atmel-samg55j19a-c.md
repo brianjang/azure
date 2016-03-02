@@ -8,7 +8,6 @@ Run a simple C sample on SAM G55 Xplained Pro device running Atmel Studio7
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
--   [Tips](#tips)
 
 # Instructions for using this template
 
@@ -70,7 +69,7 @@ You should have the following items ready before beginning the process:
 2. Open the ```simplesample_http.c``` file in the Atmel Studio7.
 3. Locate the following code in the ```simplesample_http.c```: 
     ```static const char* connectionString = "[device connection string]";``` .
-4. Replace ```[device connection string]``` with the device connection string you noted [earlier](#Step-1-Prerequisites). Save the changes.
+4. Replace ```[device connection string]``` with the device connection string you noted in [Step 1](#Step-1:-Prerequisites) and save the changes.
 5. In ```main.h```, update the following line with your WiFi accesspoint's SSID and password:
    ```
    #define MAIN_WLAN_SSID                  "your_AP_SSID" /**< Destination SSID */
@@ -92,17 +91,6 @@ You should have the following items ready before beginning the process:
 
 ## 3.2 Send Device Events to IoT Hub:
 
--   Run the sample by issuing following command:
-{{***Keep the command set based on your protocol(s) and remove the rest.***}}
-
-    {{**If using AMQP protocol:**}}
-
-        ~/cmake/iothub_client/samples/iothub_client_sample_amqp/linux/iothub_client_sample_amqp
-
-    {{**If using HTTPS protocol:**}}
-
-        ~/cmake/c/iothub\_client/samples/iothub_client_sample_http/linux/iothub_client_sample_http
-
 -   On Windows, refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to see the data your device is sending.
 
 -   If you are running other OS, please use the JavaScript tool [iot-hub explorer tool](https://github.com/Azure/azure-iot-sdks/tree/master/tools/iothub-explorer/doc)
@@ -112,13 +100,3 @@ You should have the following items ready before beginning the process:
 -   On Windows, refer "Send cloud-to-device messages" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) for instructions on sending messages to device.
 
 -   If you are running other OS, please use the JavaScript tool [iot-hub explorer tool](https://github.com/Azure/azure-iot-sdks/tree/master/tools/iothub-explorer/doc)
-
-<a name="tips"></a>
-# Tips
-
-- If you just want to build the serializer samples, run the following commands:
-
-  ```
-  cd ./c/serializer/build/linux
-  make -f makefile.linux all
-  ```
