@@ -1,4 +1,4 @@
-Run a simple C sample on {enter your device name here} device running {enter the OS name running on device}
+Run a simple C sample on SAM G55 Xplained Pro device running Atmel Studio7
 ===
 ---
 
@@ -22,7 +22,7 @@ Run a simple C sample on {enter your device name here} device running {enter the
 
 **About this document**
 
-This document describes how to connect {enter your device name here} device running {enter the OS name running on device} with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect SAM G55 Xplained Pro device running Atmel Studio7 with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -35,8 +35,12 @@ You should have the following items ready before beginning the process:
 -   Computer with Git client installed and access to the
     [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
     public repository.
--   {enter your device name here} device.
--   {{Please specify if any other software(s) or hardware(s) are required.}}
+-   SAM G55 Xplained Pro device.
+-   A computer with the Atmel Studio 7.0 or later installed.
+    - [Atmel Studio Download](http://www.atmel.com/tools/atmelstudio.aspx#download)   
+-   Required hardware:
+    - [SAM G55 Xplained Pro Evaluation Kit](http://www.atmel.com/tools/ATSAMG55-XPRO.aspx)
+    - [ATWINC1500-XPRO WiFi extension board](http://www.atmel.com/tools/atwinc1500-xpro.aspx)
 -   Download and install [DeviceExplorer](https://github.com/Azure/azure-iot-sdks/releases/download/2015-11-13/SetupDeviceExplorer.msi).
 -   [Set up your IoT hub](https://github.com/Azure/azure-iot-sdks/blob/master/doc/setup_iothub.md).
 #### Create a device on IoT Hub
