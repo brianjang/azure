@@ -35,8 +35,8 @@ You should have the following items ready before beginning the process:
 -   Computer with Git client installed and access to the
     [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
     public repository.
--   SAM G55 Xplained Pro device.
--   A computer with the Atmel Studio 7.0 or later installed.
+-   Required software
+    -   A computer with the [Atmel Studio 7.0] or later installed.(http://www.atmel.com/tools/atmelstudio.aspx#download)
     - [Atmel Studio Download](http://www.atmel.com/tools/atmelstudio.aspx#download)   
 -   Required hardware:
     - [SAM G55 Xplained Pro Evaluation Kit](http://www.atmel.com/tools/ATSAMG55-XPRO.aspx)
