@@ -25,6 +25,7 @@ This document describes how to connect SAM G55 Xplained Pro device running Atmel
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
+    -   test
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
